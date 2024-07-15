@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>Document</title>
+</head>
+<body class="bg-white">
+    <div class="w-full h-12 bg-[#6b81ff]  flex items-center justify-center">
+        <div class="bg-[#adb3b9] w-12 h-5 rounded dark:bg-slate-900 flex items-center justify-center font-robo dark:text-[#c4ccff] font-normal text-sm mr-4">New!</div>
+        
+        <p class="font-robo text-sm mr-4 md:block hidden  text-white font-normal ">Organize and track your social content ideas with the new Board view.</p>
+        <p class="font-robo text-sm mr-4 md:hidden  block text-white font-normal ">Check out the new Board view.</p>
+        
+        <div class="underline underline-offset-4 flex text-sm font-normal align-top text-white font-robo h-6">Learn more</div> 
+        
+        </div>
+        
+        <nav class="w-full bg-white  z-50 flex items-center justify-between   md:py-10 py-5 px-4 md:px-7 sticky top-0 nav">
+        
+         <div class="md:w-[110px] w-[80px] "><svg width="100%" height="100%" viewBox="0 0 143 36" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.404053 8.24483L15.821 0.258789L31.4041 8.24483L15.821 16.2588L0.404053 8.24483ZM92.9582 12.1276V11.9375C92.9582 9.30306 94.5076 8.46113 97.1172 8.65125V3.84414C90.8651 3.46392 87.902 6.58718 87.902 11.9375V12.1276H85.075V16.9347H87.902V31.4918H92.9582V16.9347H95.948H97.1172H98.7751V31.4918H103.831V16.9347H107.99V12.1276H103.831V11.9375C103.831 9.30306 105.354 8.46113 107.99 8.65125V3.84414C101.738 3.46392 98.7751 6.58718 98.7751 11.9375V12.1276H97.1172H95.948H92.9582ZM57.6198 17.3959C59.2236 16.1194 60.2021 14.2998 60.2021 11.9641C60.2021 7.42862 56.5052 4.33252 51.8568 4.33252H41.0652V31.437H52.7267C57.4838 31.437 61.2894 28.2322 61.2894 23.5881C61.2351 20.7907 59.8216 18.6452 57.6198 17.3959ZM51.8841 9.35689C53.6238 9.35689 54.8199 10.6334 54.8199 12.3444C54.8199 14.0554 53.5694 15.3318 51.8841 15.3318H46.4746V9.35689H51.8841ZM52.6996 26.4669H46.4746V20.0846H52.6996C54.5481 20.0846 55.88 21.4426 55.88 23.2622C55.88 25.109 54.5481 26.4669 52.6996 26.4669ZM77.0557 12.0996V22.5557C77.0557 25.9234 75.2072 27.3628 72.7336 27.3628C70.4502 27.3628 68.8463 26.0049 68.8463 23.3705V12.0996H63.7903V23.9952C63.7903 29.1553 67.0251 32.007 71.2113 32.007C73.8481 32.007 75.8868 31.0293 77.0285 29.2911V31.4638H82.0846V12.0996H77.0557ZM128.949 23.8327H114.161C114.895 26.3856 117.015 27.472 119.652 27.472C121.636 27.472 123.213 26.6572 124.056 25.5437L128.133 27.8522C126.312 30.4866 123.376 32.0075 119.598 32.0075C113.019 32.0075 108.86 27.5535 108.86 21.7686C108.86 15.9838 113.046 11.5298 119.217 11.5298C125.007 11.5298 129.139 16.0653 129.139 21.7686C129.139 22.5291 129.057 23.1809 128.949 23.8327ZM119.217 16.0653C116.499 16.0653 114.65 17.5047 114.079 19.9762H124.083C123.458 17.1788 121.337 16.0653 119.217 16.0653ZM136.451 15.441V12.1004H131.395V31.4646H136.451V22.2035C136.451 18.1297 139.768 16.9619 142.405 17.2878V11.7202C139.931 11.7202 137.457 12.8066 136.451 15.441ZM15.821 29.9625L5.30312 24.2588L0.404053 26.9069L15.821 35.2588L31.4041 26.9069L26.4496 24.2588L15.821 29.9625ZM5.30312 15.2588L15.821 20.4312L26.4496 15.2588L31.4041 17.6726L15.821 25.2588L0.404053 17.6726L5.30312 15.2588Z" fill="black"></path></svg></div>
+
+         <div class=" items-center hidden lg:flex">
+         <div class="flex items-center mr-12 font-robo text-lg">Tools <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 ml-1">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+          </div>
+          
+          <div class="flex items-center mr-12 font-robo text-lg">Channels <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 ml-1">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+          </div>
+          <div class="flex items-center mr-14 font-robo text-lg">Pricing
+          </div>
+          <div class="flex items-center font-robo text-lg">Blog
+        </div>
+        </div>
+
+          <div class=" flex items-center ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:size-5 size-3 md:mr-4 mr-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+              </svg>
+     <span class="font-robo md:text-base text-sm text-[#2c4bff] md:mr-4 mr-2">Log in</span>
+
+     <button class="bg-[#2c4bff] rounded-md text-white font-robo md:text-lg text-xs font-normal md:py-2 py-2 px-3 md:px-6">Get started now</button>
+             
+     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:size-9 md:ml-4 ml-2 size-7 lg:hidden">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+    
+          </div>
+          
+        
+ </nav>     
+ 
+ <!-- constant -->
+ <main class="w-full  bg-white">
+<div class="   justify-center text-center md:text-left md:flex w-full p-4">
+<div class="md:max-w-[550px]  px-4 pt-24">
+<div> <div class="flex justify-center md:justify-start"> <div class="rounded-full bg-[#2c4bff] p-1"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="0" stroke="currentColor" class="size-4">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+</svg>
+
+</div>
+
+<span class="underline underline-offset-4 font-robo ml-1 font-medium text-[#2c4bff]">Watch Demo Video</span>
+</div>
+<p class="font-pop text-res mt-8 font-bold  text-black">Grow your audience on social and beyond</p>
+
+<p class="font-robo mt-10">Buffer helps you build an audience organically. We’re a values-driven company that provides affordable, intuitive marketing tools for ambitious people and teams.</p>
+<form class="md:flex" action="">
+<input type="email" class="border rounded-md
+ border-black w-80 h-11 placeholder:text-black pl-4  pb-1  mt-10" placeholder="Enter your email...">
+<button class="bg-[#2c4bff] ml-2  mt-10 rounded-md text-white font-robo text-lg font-normal py-2 px-6">Get started now</button>
+</form>
+<div class="flex items-center  gap-3 mt-8 w-90 h-8">
+  <p class="flex font-robo text-[14px] items-center"><svg viewBox="0 0 32 31" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-miterlimit="10" class="icon-checkMark" width="24px" height="24px"><path d="M29.495 15.01c0 7.455-6.044 13.5-13.5 13.5s-13.5-6.045-13.5-13.5c0-7.456 6.044-13.5 13.5-13.5s13.5 6.044 13.5 13.5" fill="transparent" fill-rule="nonzero"></path><path d="M10.567 16.026l4.513 4.412 6.129-9.709" fill="none" stroke="#2c4bff" stroke-width="2"></path></svg>
+  Try for free </p>
+  <p class="flex font-robo text-[14px] items-center"><svg viewBox="0 0 32 31" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-miterlimit="10" class="icon-checkMark" width="24px" height="24px"><path d="M29.495 15.01c0 7.455-6.044 13.5-13.5 13.5s-13.5-6.045-13.5-13.5c0-7.456 6.044-13.5 13.5-13.5s13.5 6.044 13.5 13.5" fill="transparent" fill-rule="nonzero"></path><path d="M10.567 16.026l4.513 4.412 6.129-9.709" fill="none" stroke="#2c4bff" stroke-width="2"></path></svg>
+  No credit card required </p>
+  <p class="flex font-robo text-[14px] items-center"><svg viewBox="0 0 32 31" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-miterlimit="10" class="icon-checkMark" width="24px" height="24px"><path d="M29.495 15.01c0 7.455-6.044 13.5-13.5 13.5s-13.5-6.045-13.5-13.5c0-7.456 6.044-13.5 13.5-13.5s13.5 6.044 13.5 13.5" fill="transparent" fill-rule="nonzero"></path><path d="M10.567 16.026l4.513 4.412 6.129-9.709" fill="none" stroke="#2c4bff" stroke-width="2"></path></svg>
+   Cancel anytime </p>
+</div>
+</div>
+</div>
+
+
+<div class="block max-w-[682px]">
+<div class="flex h-full justify-center items-center">
+  <img class="w-full ml-7 " src="https://buffer.com/static/homepage/webp/hero-2.webp" alt="" srcset="">
+</div>
+</div>
+</div>
+
+
+
+
+<div class="w-full h-52 flex  overflow-hidden mt-10 px-10 wrapper ">
+  
+
+<div class="inner flex gap-12 ">
+<div class=" min-w-60 h-36 p-3 rounded-md 
+drop-shadow-2xl  item1  bg-white">
+<div class="text-2xl flex items-center  font-bold"><span class="mr-2 text-[#4f4f4f] font-robo">269%</span> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="12" fill="none"><path fill="#ABD464" d="M6.434 1.473a2 2 0 0 1 3.132 0l5.385 6.783c1.04 1.311.107 3.244-1.566 3.244H2.615C.942 11.5.008 9.567 1.049 8.256l5.385-6.783Z"></path></svg></div>
+<div class="mt-2 mb-2 font-robo text-[#4f4f4f] text-[15px]">Increase in engagemen</div>
+<div class="flex items-center"> <img src="https://buffer.com/static/social-proof/png/miajwl.png" loading="lazy" class="w-12" alt="" srcset="">
+  <span class="ml-1 font-robo text-[13px]">miajwl</span></div>
+</div>
+
+<div class="min-w-60 h-36 p-3 rounded-md 
+drop-shadow-2xl mr-1 item2 items    bg-white">
+<div class="text-2xl flex items-center  font-bold"><span class="mr-2 font-robo text-[#4f4f4f]">2x</span> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="12" fill="none"><path fill="#ABD464" d="M6.434 1.473a2 2 0 0 1 3.132 0l5.385 6.783c1.04 1.311.107 3.244-1.566 3.244H2.615C.942 11.5.008 9.567 1.049 8.256l5.385-6.783Z"></path></svg></div>
+<div class="mt-2 mb-2 font-robo text-[#4f4f4f] text-[15px]">More followers</div>
+<div class="flex items-center"> <img src="https://buffer.com/static/social-proof/png/reidouse.png" loading="lazy" class="w-12" alt="" srcset="">
+  <span class="ml-1 font-robo  text-[13px]">reidouse</span></div>
+</div> 
+
+
+<div class="min-w-60 h-36 p-3 rounded-md 
+drop-shadow-2xl mr-1 item3 items    bg-white">
+<div class="text-2xl flex items-center  font-bold"><span class="mr-2 font-robo text-[#4f4f4f]">115k</span> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="12" fill="none"><path fill="#ABD464" d="M6.434 1.473a2 2 0 0 1 3.132 0l5.385 6.783c1.04 1.311.107 3.244-1.566 3.244H2.615C.942 11.5.008 9.567 1.049 8.256l5.385-6.783Z"></path></svg></div>
+<div class="mt-2 mb-2 font-robo text-[#4f4f4f] text-[15px]">Grew following</div>
+<div class="flex items-center"> <img src="https://buffer.com/static/social-proof/png/midmod.mood.png" loading="lazy" class="w-12" alt="" srcset="">
+  <span class="ml-1 font-robo  text-[13px]">midmod.mood</span></div>     
+</div>
+
+
+<div class="min-w-60 h-36 p-3 rounded-md 
+drop-shadow-2xl mr-1 item4 items    bg-white">
+<div class="text-2xl flex items-center  font-bold"><span class="mr-2 font-robo text-[#4f4f4f]">12%</span> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="12" fill="none"><path fill="#ABD464" d="M6.434 1.473a2 2 0 0 1 3.132 0l5.385 6.783c1.04 1.311.107 3.244-1.566 3.244H2.615C.942 11.5.008 9.567 1.049 8.256l5.385-6.783Z"></path></svg></div>
+<div class="mt-2 mb-2 font-robo text-[#4f4f4f] text-[15px]">Increase in engagement</div>
+<div class="flex items-center"> <img src="https://buffer.com/static/social-proof/png/anainesurrutia.png" loading="lazy" class="w-12" alt="" srcset="">
+  <span class="ml-1 font-robo  text-[13px]">anainesurrutia</span></div>
+</div>
+
+
+<div class="min-w-60 h-36 p-3 rounded-md 
+drop-shadow-2xl mr-1 item5 items    bg-white">
+<div class="text-2xl flex items-center  font-bold"><span class="mr-2 font-robo text-[#4f4f4f]">2,000</span> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="12" fill="none"><path fill="#ABD464" d="M6.434 1.473a2 2 0 0 1 3.132 0l5.385 6.783c1.04 1.311.107 3.244-1.566 3.244H2.615C.942 11.5.008 9.567 1.049 8.256l5.385-6.783Z"></path></svg></div>
+<div class="mt-2 mb-2 font-robo text-[#4f4f4f] text-[15px]">New followers in two months</div>
+<div class="flex items-center"> <img src="https://buffer.com/static/social-proof/png/pdelabaume.png" loading="lazy" class="w-12" alt="" srcset="">
+  <span class="ml-1 font-robo  text-[13px]">pdelabaume</span></div>
+</div>
+
+<div class="min-w-60 h-36 p-3 rounded-md 
+drop-shadow-2xl mr-1 item6 items    bg-white">
+<div class="text-2xl flex items-center  font-bold"><span class="mr-2 font-robo text-[#4f4f4f]">4x</span> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="12" fill="none"><path fill="#ABD464" d="M6.434 1.473a2 2 0 0 1 3.132 0l5.385 6.783c1.04 1.311.107 3.244-1.566 3.244H2.615C.942 11.5.008 9.567 1.049 8.256l5.385-6.783Z"></path></svg></div>
+<div class="mt-2 mb-2 font-robo text-[#4f4f4f] text-[15px]">Increase in traffic</div>
+<div class="flex items-center"> <img src="https://buffer.com/static/social-proof/png/FolsonGrp.png" loading="lazy" class="w-12" alt="" srcset="">
+  <span class="ml-1 font-robo  text-[13px]">FolsonGrp</span></div>
+</div>
+
+
+<div class="min-w-60 h-36 p-3 rounded-md 
+drop-shadow-2xl mr-1 item7 items    bg-white">
+<div class="text-2xl flex items-center  font-bold"><span class="mr-2 font-robo text-[#4f4f4f]">10%</span> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="12" fill="none"><path fill="#ABD464" d="M6.434 1.473a2 2 0 0 1 3.132 0l5.385 6.783c1.04 1.311.107 3.244-1.566 3.244H2.615C.942 11.5.008 9.567 1.049 8.256l5.385-6.783Z"></path></svg></div>
+<div class="mt-2 mb-2 font-robo text-[#4f4f4f] text-[15px]">Monthly growth in followers</div>
+<div class="flex items-center"> <img src="https://buffer.com/static/social-proof/png/AnglDavd.png" loading="lazy" class="w-12" alt="" srcset="">
+  <span class="ml-1 font-robo  text-[13px]">
+    AnglDavd</span></div>
+</div>
+
+
+<div class="min-w-60 h-36 p-3 rounded-md 
+drop-shadow-2xl mr-1 item8 items    bg-white">
+<div class="text-2xl flex items-center  font-bold"><span class="mr-2 font-robo text-[#4f4f4f]">15%</span> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="12" fill="none"><path fill="#ABD464" d="M6.434 1.473a2 2 0 0 1 3.132 0l5.385 6.783c1.04 1.311.107 3.244-1.566 3.244H2.615C.942 11.5.008 9.567 1.049 8.256l5.385-6.783Z"></path></svg></div>
+<div class="mt-2 mb-2 font-robo text-[#4f4f4f] text-[15px]">Increase in followers</div>
+<div class="flex items-center"> <img src="https://buffer.com/static/social-proof/png/mandhirb.png" loading="lazy" class="w-12" alt="" srcset="">
+  <span class="ml-1 font-robo  text-[13px]">
+    mandhirb</span></div>
+</div>
+
+
+<div class="min-w-60 h-36 p-3 rounded-md 
+drop-shadow-2xl mr-1 item9 items    bg-white">
+<div class="text-2xl flex items-center  font-bold"><span class="mr-2 font-robo text-[#4f4f4f]">50%</span> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="12" fill="none"><path fill="#ABD464" d="M6.434 1.473a2 2 0 0 1 3.132 0l5.385 6.783c1.04 1.311.107 3.244-1.566 3.244H2.615C.942 11.5.008 9.567 1.049 8.256l5.385-6.783Z"></path></svg></div>
+<div class="mt-2 mb-2 font-robo text-[#4f4f4f] text-[15px]">Increase in impressions</div>
+<div class="flex items-center"> <img src="https://buffer.com/static/social-proof/png/mattreiners.png" loading="lazy" class="w-12" alt="" srcset="">
+  <span class="ml-1 font-robo  text-[13px]">
+    mattreiners</span></div>
+</div>
+
+
+<div class="min-w-60 h-36 p-3 rounded-md 
+drop-shadow-2xl mr-1 item10 items    bg-white">
+<div class="text-2xl flex items-center  font-bold"><span class="mr-2 font-robo text-[#4f4f4f]">400%</span> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="12" fill="none"><path fill="#ABD464" d="M6.434 1.473a2 2 0 0 1 3.132 0l5.385 6.783c1.04 1.311.107 3.244-1.566 3.244H2.615C.942 11.5.008 9.567 1.049 8.256l5.385-6.783Z"></path></svg></div>
+<div class="mt-2 mb-2 font-robo text-[#4f4f4f] text-[15px]">Increase in followers</div>
+<div class="flex items-center"> <img src="https://buffer.com/static/social-proof/png/thegingermanrestaurant.png" loading="lazy" class="w-12" alt="" srcset="">
+  <span class="ml-1 font-robo  text-[13px]">
+    
+thegingermanrestaurant</span></div>
+</div>
+
+
+
+<div class="min-w-60 h-36 p-3 rounded-md 
+drop-shadow-2xl mr-1 item11 items    bg-white">
+<div class="text-2xl flex items-center  font-bold"><span class="mr-2 font-robo text-[#4f4f4f]">999%</span> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="12" fill="none"><path fill="#ABD464" d="M6.434 1.473a2 2 0 0 1 3.132 0l5.385 6.783c1.04 1.311.107 3.244-1.566 3.244H2.615C.942 11.5.008 9.567 1.049 8.256l5.385-6.783Z"></path></svg></div>
+<div class="mt-2 mb-2 font-robo text-[#4f4f4f] text-[15px]">Increase in engagement</div>
+<div class="flex items-center"> <img src="https://buffer.com/static/social-proof/png/niniefydesigns.png" loading="lazy" class="w-12" alt="" srcset="">
+  <span class="ml-1 font-robo  text-[13px]">
+    
+
+    niniefydesigns</span></div>
+</div>
+
+
+
+<div class="min-w-60 h-36 p-3 rounded-md 
+drop-shadow-2xl mr-1 item12 items    bg-white">
+<div class="text-2xl flex items-center  font-bold"><span class="mr-2 font-robo text-[#4f4f4f]">251%</span> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="12" fill="none"><path fill="#ABD464" d="M6.434 1.473a2 2 0 0 1 3.132 0l5.385 6.783c1.04 1.311.107 3.244-1.566 3.244H2.615C.942 11.5.008 9.567 1.049 8.256l5.385-6.783Z"></path></svg></div>
+<div class="mt-2 mb-2 font-robo text-[#4f4f4f] text-[15px]">Increase in engagement</div>
+<div class="flex items-center"> <img src="https://buffer.com/static/social-proof/png/matthuesart.png" loading="lazy" class="w-12" alt="" srcset="">
+  <span class="ml-1 font-robo  text-[13px]">
+    
+
+    matthuesart</span></div>
+</div>
+
+
+
+<div class="min-w-60 h-36 p-3 rounded-md 
+drop-shadow-2xl mr-1 item13 items    bg-white">
+<div class="text-2xl flex items-center  font-bold"><span class="mr-2 font-robo text-[#4f4f4f]">40%</span> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="12" fill="none"><path fill="#ABD464" d="M6.434 1.473a2 2 0 0 1 3.132 0l5.385 6.783c1.04 1.311.107 3.244-1.566 3.244H2.615C.942 11.5.008 9.567 1.049 8.256l5.385-6.783Z"></path></svg></div>
+<div class="mt-2 mb-2 font-robo text-[#4f4f4f] text-[15px]">New leads</div>
+<div class="flex items-center"> <img src="https://buffer.com/static/social-proof/png/rhimagery.png" loading="lazy" class="w-12" alt="" srcset="">
+  <span class="ml-1 font-robo  text-[13px]">
+    
+
+    
+rhimagery</span></div>
+</div>
+
+
+
+<div class="min-w-60 h-36 p-3 rounded-md 
+drop-shadow-2xl mr-1 item14 items    bg-white">
+<div class="text-2xl flex items-center  font-bold"><span class="mr-2 font-robo text-[#4f4f4f]">200,000</span> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="12" fill="none"><path fill="#ABD464" d="M6.434 1.473a2 2 0 0 1 3.132 0l5.385 6.783c1.04 1.311.107 3.244-1.566 3.244H2.615C.942 11.5.008 9.567 1.049 8.256l5.385-6.783Z"></path></svg></div>
+<div class="mt-2 mb-2 font-robo text-[#4f4f4f] text-[15px]">New followers</div>
+<div class="flex items-center"> <img src="https://buffer.com/static/social-proof/png/onlinemarketinges.png" loading="lazy" class="w-12" alt="" srcset="">
+  <span class="ml-1 font-robo  text-[13px]">
+    
+
+    
+
+    onlinemarketinges</span></div>
+</div>
+
+
+
+<div class="min-w-60 h-36 p-3 rounded-md 
+drop-shadow-2xl mr-1 item15 items    bg-white">
+<div class="text-2xl flex items-center  font-bold"><span class="mr-2 font-robo text-[#4f4f4f]">269%</span> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="12" fill="none"><path fill="#ABD464" d="M6.434 1.473a2 2 0 0 1 3.132 0l5.385 6.783c1.04 1.311.107 3.244-1.566 3.244H2.615C.942 11.5.008 9.567 1.049 8.256l5.385-6.783Z"></path></svg></div>
+<div class="mt-2 mb-2 font-robo text-[#4f4f4f] text-[15px]">Increase in engagement</div>
+<div class="flex items-center"> <img src="https://buffer.com/static/social-proof/png/miajwl.png" loading="lazy" class="w-12" alt="" srcset="">
+  <span class="ml-1 font-robo  text-[13px]">
+  
+miajwl</span></div>
+</div>
+
+
+<div class="min-w-60 h-36 p-3 rounded-md 
+drop-shadow-2xl mr-1 item16 items    bg-white">
+<div class="text-2xl flex items-center  font-bold"><span class="mr-2 font-robo text-[#4f4f4f]">2x</span> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="12" fill="none"><path fill="#ABD464" d="M6.434 1.473a2 2 0 0 1 3.132 0l5.385 6.783c1.04 1.311.107 3.244-1.566 3.244H2.615C.942 11.5.008 9.567 1.049 8.256l5.385-6.783Z"></path></svg></div>
+<div class="mt-2 mb-2 font-robo text-[#4f4f4f] text-[15px]">Increase in engagement</div>
+<div class="flex items-center"> <img src="https://buffer.com/static/social-proof/png/become.png" loading="lazy" class="w-12" alt="" srcset="">
+  <span class="ml-1 font-robo  text-[13px]">
+  
+    become</span></div>
+</div>
+
+
+<div class="min-w-60 h-36 p-3 rounded-md 
+drop-shadow-2xl mr-1 item17 items    bg-white">
+<div class="text-2xl flex items-center  font-bold"><span class="mr-2 font-robo text-[#4f4f4f]">100</span> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="12" fill="none"><path fill="#ABD464" d="M6.434 1.473a2 2 0 0 1 3.132 0l5.385 6.783c1.04 1.311.107 3.244-1.566 3.244H2.615C.942 11.5.008 9.567 1.049 8.256l5.385-6.783Z"></path></svg></div>
+<div class="mt-2 mb-2 font-robo text-[#4f4f4f] text-[15px]">New followers a day</div>
+<div class="flex items-center"> <img src="https://buffer.com/static/social-proof/png/authorbetseyk.png" loading="lazy" class="w-12" alt="" srcset="">
+  <span class="ml-1 font-robo  text-[13px]">
+  
+    authorbetseyk</span></div>
+</div>
+
+
+<div class="min-w-60 h-36 p-3 rounded-md 
+drop-shadow-2xl mr-1 item18 items    bg-white">
+<div class="text-2xl flex items-center  font-bold"><span class="mr-2 font-robo text-[#4f4f4f]">100%</span> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="12" fill="none"><path fill="#ABD464" d="M6.434 1.473a2 2 0 0 1 3.132 0l5.385 6.783c1.04 1.311.107 3.244-1.566 3.244H2.615C.942 11.5.008 9.567 1.049 8.256l5.385-6.783Z"></path></svg></div>
+<div class="mt-2 mb-2 font-robo text-[#4f4f4f] text-[15px]">Increase in engagement</div>
+<div class="flex items-center"> <img src="https://buffer.com/static/social-proof/png/charl3s.doe.png" loading="lazy" class="w-12" alt="" srcset="">
+  <span class="ml-1 font-robo  text-[13px]">
+     
+charl3s.doe</span></div>
+</div>
+
+
+
+<div class="min-w-60 h-36 p-3 rounded-md 
+drop-shadow-2xl mr-1 item19 items    bg-white">
+<div class="text-2xl flex items-center  font-bold"><span class="mr-2 font-robo text-[#4f4f4f]">35%</span> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="12" fill="none"><path fill="#ABD464" d="M6.434 1.473a2 2 0 0 1 3.132 0l5.385 6.783c1.04 1.311.107 3.244-1.566 3.244H2.615C.942 11.5.008 9.567 1.049 8.256l5.385-6.783Z"></path></svg></div>
+<div class="mt-2 mb-2 font-robo text-[#4f4f4f] text-[15px]">Increase in engagement</div>
+<div class="flex items-center"> <img src="https://buffer.com/static/social-proof/png/andreobradovic.png" loading="lazy" class="w-12" alt="" srcset="">
+  <span class="ml-1 font-robo  text-[13px]">
+    andreobradovic</span></div>
+</div>
+
+
+
+<div class="min-w-60 h-36 p-3 rounded-md 
+drop-shadow-2xl mr-1 item20 items    bg-white">
+<div class="text-2xl flex items-center  font-bold"><span class="mr-2 font-robo text-[#4f4f4f]">269%</span> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="12" fill="none"><path fill="#ABD464" d="M6.434 1.473a2 2 0 0 1 3.132 0l5.385 6.783c1.04 1.311.107 3.244-1.566 3.244H2.615C.942 11.5.008 9.567 1.049 8.256l5.385-6.783Z"></path></svg></div>
+<div class="mt-2 mb-2 font-robo text-[#4f4f4f] text-[15px]">Increase in engagement</div>
+<div class="flex items-center"> <img src="https://buffer.com/static/social-proof/png/miajwl.png" loading="lazy" class="w-12" alt="" srcset="">
+  <span class="ml-1 font-robo  text-[13px]">
+    miajwl</span></div>
+</div>
+
+
+<div class="min-w-60 h-36 p-3 rounded-md 
+drop-shadow-2xl mr-1 item21 items    bg-white">
+<div class="text-2xl flex items-center  font-bold"><span class="mr-2 font-robo text-[#4f4f4f]">2x</span> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="12" fill="none"><path fill="#ABD464" d="M6.434 1.473a2 2 0 0 1 3.132 0l5.385 6.783c1.04 1.311.107 3.244-1.566 3.244H2.615C.942 11.5.008 9.567 1.049 8.256l5.385-6.783Z"></path></svg></div>
+<div class="mt-2 mb-2 font-robo text-[#4f4f4f] text-[15px]">Increase in following</div>
+<div class="flex items-center"> <img src="https://buffer.com/static/social-proof/png/mentorcruise.png" loading="lazy" class="w-12" alt="" srcset="">
+  <span class="ml-1 font-robo  text-[13px]">
+    mentorcruise</span></div>
+</div>
+
+<div class="min-w-60 h-36 p-3 rounded-md 
+drop-shadow-2xl mr-1 item22 items    bg-white">
+<div class="text-2xl flex items-center  font-bold"><span class="mr-2 font-robo text-[#4f4f4f]">200%</span> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="12" fill="none"><path fill="#ABD464" d="M6.434 1.473a2 2 0 0 1 3.132 0l5.385 6.783c1.04 1.311.107 3.244-1.566 3.244H2.615C.942 11.5.008 9.567 1.049 8.256l5.385-6.783Z"></path></svg></div>
+<div class="mt-2 mb-2 font-robo text-[#4f4f4f] text-[15px]">Increase in following</div>
+<div class="flex items-center"> <img src="https://buffer.com/static/social-proof/png/majestyk-apps.png" loading="lazy" class="w-12" alt="" srcset="">
+  <span class="ml-1 font-robo  text-[13px]">
+    majestyk apps</span></div>
+</div>
+</div>
+</div>
+
+<div class="w-full h-52  mt-10 px-10 gap-7 flex flex-col justify-center text-center">
+  <div class="font-pop text-res2 font-bold ">Build a following without draining your time</div>
+  <div class="w-full flex justify-center">
+  <div class="max-w-[600px] font-robo text-center">Creating content is hard enough. Let alone distributing it to all the different marketing channels. Here are four ways Buffer can help.</div></div>
+
+</div>
+
+
+
+
+<div class="justify-center flex flex-col  text-center md:text-left md:flex md:flex-row w-full gap-[2em] p-4 mt-3 md:mt-0">
+  <div class="min-w-[350px] md:max-w-[550px]  px-4 md:pt-28">
+  <div>
+     <span class=" font-robo ml-1 text-lg font-semibold text-[#2c4bff]">1. CREATE CLICK-WORTHY CONTENT</span>
+  
+  <p class="font-pop text-res2 mt-8 font-bold  text-black">Build a library of content ideas</p>
+  
+  <p class="font-robo mt-8">Buffer will help you turn your ideas into captivating posts for each platform.</p>
+ 
+  
+  <button class="bg-[#2c4bff]   mt-10 rounded-md text-white font-robo text-lg font-normal py-3 px-6">Start creating</button>
+
+  
+  </div>
+  </div>
+  
+  
+  <div class=" md:max-w-[652px]">
+  <div class="flex h-full justify-center items-center">
+    <img class="w-full  " src="https://buffer.com/static/homepage/webp/section-1-b.webp" alt="" srcset="">
+  </div>
+  </div>
+  </div>
+
+
+
+<div class="justify-center flex flex-col  text-center md:text-left md:flex md:flex-row w-full gap-[2em] p-4 mt-3 md:mt-12">
+  <div class="min-w-[350px] md:max-w-[550px]  px-4 md:pt-28 pt-8">
+  <div> 
+     <span class=" font-robo ml-1 text-lg font-semibold text-[#2c4bff]">2. BUILD AN ENGAGED AUDIENCE</span>
+ 
+  <p class="font-pop text-res2 mt-8 font-bold  text-black">Grow your following</p>
+  
+  <p class="font-robo mt-8">Buffer will share your content on the right channels, with suggested hashtags to help you grow</p>
+ 
+  
+  <button class="bg-[#2c4bff]   mt-10 rounded-md text-white font-robo text-lg font-normal py-3 px-6">Start growing</button>
+
+  
+  </div>
+  </div>
+  
+  
+  <div class="md:max-w-[652px]">
+  <div class="flex h-full justify-center items-center">
+    <img class="w-full" src="https://buffer.com/static/homepage/webp/section-2.webp" alt="" srcset="">
+  </div>
+  </div>
+  </div>
+
+  <div class="justify-center flex flex-col  text-center md:text-left md:flex md:flex-row w-full gap-[2em] p-4 mt-3  md:mt-44 ">
+    <div class="min-w-[350px]  md:max-w-[550px] px-4 md:pt-12 pt-8">
+    <div> 
+       <span class=" font-robo ml-1 text-lg font-semibold text-[#2c4bff]">3. SAVE TONS OF TIME</span>
+ 
+    <p class="font-pop text-res2 mt-8 font-bold  text-black">Halve your workload</p>
+    
+    <p class="font-robo mt-8">Buffer will publish everything for you to save time and it’ll showcase your work with automated reports.</p>
+   
+    
+    <button class="bg-[#2c4bff]   mt-10 rounded-md text-white font-robo text-lg font-normal py-3 px-6">Start optimizing</button>
+  
+    
+    </div>
+    </div>
+    
+    
+    <div class=" md:max-w-[652px]">
+    <div class="flex h-full justify-center items-center">
+      <img class="w-full " src="https://buffer.com/static/homepage/webp/section-3-a.webp" alt="" srcset="">
+    </div>
+    </div>
+    </div>
+
+
+       
+      <div class="justify-center flex flex-col  text-center md:text-left md:flex md:flex-row w-full gap-[2em] p-4 mt-3 md:mt-40 mb-14 md:mb-24">
+        <div class="min-w-[400px] md:max-w-[550px]  px-4 md:pt-12 pt-8">
+        <div> 
+
+           <span class=" font-robo ml-1 text-lg   font-semibold text-[#2c4bff]">4. COORDINATE WITH EASE</span>
+       
+        <p class="font-pop text-res2 mt-8 font-bold  text-black">Collaboration has never been easier</p>
+        
+        <p class="font-robo mt-8">With Buffer’s permissions levels and approval flows, your team can work freely without any micro-management.</p>
+       
+        
+        <button class="bg-[#2c4bff]   mt-10 rounded-md text-white font-robo text-lg font-normal py-3 px-6">Start collaborating</button>
+      
+        
+        </div>
+        </div>
+        
+        
+        <div class=" md:max-w-[652px]">
+        <div class="flex h-full justify-center items-center">
+          <img class="w-full " src="https://buffer.com/static/homepage/webp/section-4.webp" alt="" srcset="">
+        </div>
+        </div>
+        </div>
+
+
+        <div class="h-[480px]   w-full overflow-hidden flex items-end px-10 wrapperr">
+
+
+         <div class="innerr flex gap-10">
+        <div class="md:min-w-96 min-w-80 h-[350px] p-10 text-center rounded-lg drop-shadow-xl  bg-white"> 
+          <div class="rounded-full absolute z-20 md:right-36 right-28 top-[-60px] w-28 overflow-hidden"><img src="https://buffer.com/static/testimonials/luis-cancel-huckberry-mobile.jpg" alt="" srcset=""></div>
+ 
+            <p class="font-robo  mt-9 ">Buffer has made sharing our story and building our brand on social media so much easier.</p>
+            
+
+            <div class="w-full flex justify-center items-center ">
+            <div class="w-24   mt-12">
+              <svg viewBox="0 0 98 16" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><g fill="#B8B8B8" fill-rule="evenodd"><path d="M18.159.966a8.36 8.36 0 0 1 .444 2.706v1.865h-4.668V.687h-3.761l.1.281c.297.874.444 1.799.444 2.721v9.386h3.217V8.21h4.668v4.866h3.217V.688h-3.761l.1.278zM37.245 5.09c.991 0 1.47.545 1.616 1.799l2.853-.166c-.149-1.137-.395-1.716-1.071-2.458-.857-.924-2.014-1.403-3.515-1.403-3.067 0-5.13 2.111-5.13 5.262 0 3.085 1.98 5.13 4.967 5.13 1.681 0 2.985-.561 3.86-1.699.528-.644.742-1.171.874-2.243l-2.853-.165c-.18 1.171-.742 1.715-1.698 1.715-1.22 0-1.716-.825-1.716-2.838-.002-1.994.56-2.934 1.813-2.934zM28.32 8.702c0 .527.05 1.204-.28 1.65a1.751 1.751 0 0 1-1.352.676c-.776 0-1.122-.412-1.122-1.286V3.077h-2.87v6.665c0 1.403.131 1.896.56 2.506.513.725 1.436.957 2.26 1.006 1.09.083 2.458-.132 3.12-1.123.1.396.231.874.246.94h2.36V3.075l-2.953.017.032 5.61zM52.322 3.077h-2.984s-3.761 4.354-3.959 4.586V.685h-3.431l.1.298a8.36 8.36 0 0 1 .444 2.706v9.403h2.87V10.52l1.782-1.98 2.16 4.537h3.382L49.304 6.48l3.018-3.402zM77.132 4.959V3.077h-2.804v9.996h2.97V8.998c0-2.08.857-3.185 3.019-3.185V2.86c-1.255.004-2.756.68-3.185 2.099zM84.043 4.959V3.077H81.24v9.996h2.97V8.998c0-2.08.857-3.185 3.019-3.185V2.86c-1.254.004-2.738.68-3.185 2.099zM94.85 3.077l-1.914 5.674-1.896-5.674H87.92l3.597 9.996-.925 2.853h2.392c.28-.808 3.893-11.514 4.354-12.866h-2.492v.017h.002z"></path><path d="M59.168 2.896c-1.089 0-1.896.413-2.558 1.452V.685h-3.597l.1.298c.298.874.445 1.782.445 2.69v9.402h2.425c0-.017.15-.544.264-.973.71.89 1.403 1.171 2.59 1.171 2.623 0 4.172-1.947 4.172-5.247.02-3.15-1.466-5.13-3.841-5.13zm.742 5.757c-.034.479-.115 1.057-.313 1.55-.246.593-.676 1.04-1.418 1.04-.973 0-1.583-.791-1.583-2.111v-1.65c0-1.435.61-2.343 1.615-2.343 1.748-.015 1.782 2.277 1.699 3.514zM73.6 8.587c-.016-1.764-.23-2.589-.841-3.58-.776-1.303-2.326-2.11-4.058-2.11-2.97 0-4.998 2.16-4.998 5.278 0 3.05 2.045 5.098 5.112 5.098 1.518 0 2.624-.43 3.532-1.352.512-.527.79-.974 1.088-1.816l-2.755-.18c-.264.825-.857 1.269-1.765 1.269-1.203 0-1.996-.857-1.996-2.145 0-.083 0-.298.017-.462h6.665zM68.853 4.81c1.105 0 1.615.61 1.75 2.045h-3.664c.147-1.384.76-2.045 1.914-2.045z" fill-rule="nonzero"></path><path d="M6.167 5.073l-.264-.33.346.233c.776.495 1.55.94 2.31 1.32a7.735 7.735 0 0 0 .297-1.633C6.464 2.569 5.226.622 4.897.06 4.567.622 3.347 2.567.94 4.663c.049.544.149 1.088.298 1.633a25.06 25.06 0 0 0 2.308-1.32l.347-.232-.264.33A23.009 23.009 0 0 1 .395 8.306c.017.578.1 1.154.246 1.715 1.418-.527 2.673-1.137 4.24-1.979L3.527 9.66v.115c0 1.122-.18 2.243-.544 3.3h3.81a10.226 10.226 0 0 1-.545-3.3V8.768c.808.413 1.65.791 2.87 1.27a9.902 9.902 0 0 0 .247-1.716 24.398 24.398 0 0 1-3.2-3.249z"></path></g></svg>
+            </div>
+          </div>
+            <p class="font-robo font-bold mt-10">Luis Cancel, Managing Editor</p>
+        </div>
+
+
+        <div class="md:min-w-96 min-w-80 h-[350px] p-10 text-center rounded-lg drop-shadow-xl  bg-white"> 
+          <div class="rounded-full absolute z-20 md:right-36 right-28 top-[-60px] w-28 overflow-hidden"><img src="https://buffer.com/static/testimonials/liz-gillis-dress-up@2x-mobile.jpg" alt="" srcset=""></div>
+ 
+            <p class="font-robo  mt-9 ">On social, we need to be fast, efficient, and intentional. Buffer allows us to be exactly that.</p>
+            
+            <div class="w-full flex justify-center items-center ">
+            <div class="w-24   mt-12">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1174 307"><g fill="#B8B8B8" fill-rule="evenodd"><path d="M.83 241.27V.78C1.66.73 2.35.66 3.05.66 29.61.66 56.17.58 82.73.7c14.88.07 29.22 2.97 42.77 9.33 14.25 6.69 25.93 16.59 35.77 28.76 13.37 16.54 21.6 35.36 25.13 56.3 2.54 15.1 2.77 30.25.88 45.42-3.6 28.82-15.07 53.88-36.2 74.12-14.2 13.61-31.13 21.88-50.53 25.14-6.73 1.13-13.5 1.6-20.3 1.61-25.6.03-51.2.01-76.8.01-.85 0-1.71-.08-2.62-.12zm13.5-13.79c.79.05 1.27.1 1.74.1 22.15 0 44.3.05 66.46-.04 8.59-.04 17.03-1.38 25.24-4 18.1-5.78 32.6-16.72 44.41-31.35 13.01-16.11 19.46-34.87 21.65-55.25 1.4-12.94 1.17-25.86-.9-38.73-2.9-18-9.56-34.42-20.69-48.95-7.47-9.76-16.27-18.02-27.01-24.12-13.32-7.57-27.76-10.88-42.96-10.98-21.91-.13-43.82-.04-65.74-.04-.7 0-1.39.08-2.22.13.02 71.11.02 142.08.02 213.23zM1044.15 216.25v90.43c-2.33.24-4.54.09-6.74.12-2.24.03-4.47.01-6.55.01-.2-.19-.27-.24-.32-.3-.05-.06-.13-.12-.14-.18-.05-.31-.11-.63-.11-.95 0-67.42.01-134.84.02-202.27 0-.22.11-.45.21-.82h13.53v25.4c1.28-.34 1.66-1.28 2.22-1.95 6.15-7.4 13.33-13.56 21.91-17.99 11.67-6.02 24.15-8.12 37.16-7.54 10.43.46 20.49 2.66 29.68 7.71 20.07 11.04 32.95 27.6 37.04 50.33 2.76 15.38 1.56 30.59-5.43 44.74-11 22.27-28.78 36.03-53.51 39.85-16.39 2.53-32.21.26-46.85-8.05-7.66-4.35-14.2-10.06-19.93-16.72-.57-.66-1.15-1.31-1.73-1.96-.15.04-.31.09-.46.14zm57.2-102.68c-33.27-.36-58.4 27.87-58.36 58.47.04 31.38 27.28 58.38 58.55 58.33 32.02-.05 58.39-26.85 58.36-58.57-.04-30.99-26.57-58.71-58.55-58.23z" fill-rule="nonzero"></path><path d="M823.7.72h13.27c.07.65.19 1.26.2 1.86.02 2.64.01 5.28.01 7.92 0 56.56.01 113.11-.02 169.67 0 5.72.5 11.34 2.23 16.81 3.58 11.36 11.09 19.43 21.27 25.23 7.27 4.14 15.16 6.35 23.43 7.23 9.87 1.05 19.66.58 29.22-2.29 10.77-3.22 19.96-8.93 27.01-17.79 5.28-6.63 8.09-14.28 8.79-22.7.24-2.86.32-5.75.32-8.63.02-58 .01-115.99.01-173.99V.8h13.77v2.66c0 59.04-.01 118.07.01 177.11 0 8.47-1.02 16.78-4.26 24.66-6.52 15.9-18.22 26.6-33.96 32.98-11.54 4.68-23.67 5.83-36.02 5.4-11-.38-21.58-2.56-31.52-7.36-12.81-6.19-22.7-15.37-28.61-28.51-3.05-6.79-4.58-13.95-5.02-21.36-.14-2.31-.12-4.64-.12-6.96-.01-58.48 0-116.95 0-175.43-.01-1.01-.01-2.04-.01-3.27z"></path><path d="M494.08 168.92H363.9c0 1.33-.03 2.43 0 3.52.24 8.45 1.58 16.71 4.74 24.59 6.49 16.15 18.11 26.66 34.93 31.17 12.7 3.4 25.47 3.23 38.17-.14 8.74-2.31 16.18-6.88 22.19-13.58 3.14-3.5 5.85-7.38 8.75-11.1.48-.62.9-1.3 1.44-2.09 4.1 1.89 8.14 3.74 12.32 5.67-.49.96-.85 1.74-1.29 2.47-11.18 19.14-27.95 30.12-49.65 33.62-12.89 2.08-25.68 1.27-38.14-2.88-22.79-7.6-40.84-28.06-45.4-51.65-2.97-15.39-2.5-30.69 3.53-45.28 9.27-22.4 26.02-36.5 49.72-41.66 16.03-3.49 32.09-2.69 47.34 3.79 20.59 8.74 34.32 23.77 39.77 45.82 1.31 5.3 1.81 10.71 1.9 16.16.03.39-.05.78-.14 1.57zm-127.95-13.37h112.46c0-.4.04-.64-.01-.87-1.5-7.5-4.48-14.33-9.34-20.26-6.81-8.31-15.45-14.07-25.53-17.63-11.68-4.14-23.65-4.41-35.72-2.13-9.22 1.74-17.48 5.59-24.49 11.9-8.57 7.71-13.82 17.48-17.33 28.29-.06.21-.03.45-.04.7z" fill-rule="nonzero"></path><path d="M623.98 116.37c-3.41 2.96-6.61 5.73-9.91 8.59-.36-.27-.69-.47-.96-.72-8.77-8.22-19.37-11.17-31.1-10.5-3.08.17-6.22.72-9.15 1.65-7.1 2.24-11.05 7.34-12.08 14.65-.33 2.35-.46 4.8-.24 7.16.58 6.22 3.79 10.92 8.93 14.35 4.69 3.13 9.87 5.22 15.16 7.08 8.67 3.04 17.28 6.25 25.45 10.5 4.13 2.15 8.02 4.62 11.29 8 6.16 6.36 9.41 13.99 9.98 22.78.31 4.81.07 9.59-1.18 14.28-2 7.51-6.11 13.65-12.04 18.62-7.92 6.64-17.07 10.28-27.32 11.07-9.2.71-18.21-.32-26.8-3.93-11.88-4.99-20.16-13.8-26.5-25.11 3.72-2.51 7.62-4.63 11.59-7.08.43.63.84 1.18 1.2 1.76 2.11 3.51 4.53 6.77 7.38 9.72 5.96 6.17 13.16 9.81 21.7 10.64 6.72.65 13.42.57 20-1.2.92-.25 1.84-.54 2.74-.86 9.24-3.32 14.09-10.07 15.27-19.65.39-3.18.56-6.41-.18-9.55-1.86-7.83-6.27-13.95-13.54-17.35-7.44-3.48-15.23-6.19-22.85-9.29-4.58-1.87-9.17-3.74-13.67-5.8-2.46-1.13-4.8-2.56-7.07-4.04-8.2-5.36-12.37-13.11-13.3-22.75-.42-4.34-.46-8.68.83-12.85 4.28-13.8 13.63-22.67 27.68-25.36 18-3.45 34.04 1.38 47.56 13.97.34.29.63.66 1.13 1.22zM684.34 207.72c.54.87.92 1.56 1.39 2.2 1.92 2.65 3.7 5.43 5.85 7.89 5.84 6.68 13.08 10.89 22.04 11.92 7.13.82 14.22.76 21.18-1.12 7.7-2.08 13.58-6.4 16.27-14.19.83-2.39 1.31-4.95 1.61-7.47 1.09-9.34-2.31-16.95-9.42-22.91a22.42 22.42 0 0 0-5.7-3.45c-7.15-2.98-14.4-5.7-21.57-8.64-5.17-2.12-10.31-4.32-15.37-6.69-2.3-1.07-4.46-2.51-6.55-3.98-6.77-4.79-10.52-11.46-11.81-19.56-.73-4.62-.95-9.28.22-13.83 3.5-13.66 12.44-22.12 25.69-26.33 19.23-3.96 36.1.54 50.43 14.11.16.15.25.38.51.78-3.24 2.81-6.49 5.63-9.83 8.53-.42-.33-.8-.58-1.13-.89-8.68-8.04-19.13-10.92-30.7-10.38-2.54.12-5.11.49-7.57 1.12-8.71 2.23-13.48 8.17-14.22 17.11-.78 9.37 2.89 16.28 11.03 20.9 4.54 2.57 9.35 4.5 14.27 6.2 8.61 2.99 17.14 6.19 25.15 10.58 2.72 1.49 5.41 3.15 7.79 5.12 8.09 6.7 12.11 15.5 12.73 25.91.26 4.33-.08 8.63-1.11 12.86-1.76 7.21-5.45 13.26-10.96 18.21-8.27 7.43-18.03 11.42-29.07 12.2-7.56.53-15.02-.15-22.28-2.48-10.4-3.34-18.68-9.64-25.17-18.34-1.91-2.56-3.57-5.29-5.52-8.22 3.97-2.53 7.86-4.78 11.82-7.16zM266.7 241.23h-13.64V102.28h13.53c.28 5.89 0 11.76.17 18.11.58-.69.94-1.03 1.2-1.44 2.8-4.42 6.17-8.36 10.02-11.89 4.86-4.47 10.49-6.67 17.2-6.65 11.51.02 21.63 3.66 30.8 10.93-2.38 3.7-4.78 7.42-7.26 11.27-.92-.59-1.71-1.1-2.5-1.61-6.33-4.17-13.17-6.83-20.84-7.07-4.5-.14-8.5 1.18-12.12 3.79-5.87 4.24-9.98 9.85-12.87 16.42-2.48 5.63-3.72 11.5-3.7 17.7.06 28.72.03 57.44.03 86.16-.02 1.01-.02 2.04-.02 3.23z"></path></g></svg>
+            </div>
+          </div>
+            <p class="font-robo font-bold mt-10">Liz Gillis, Digital Marketer</p>
+        </div>
+
+
+
+        
+        <div class="md:min-w-96 min-w-80 h-[350px] p-10 text-center rounded-lg drop-shadow-xl  bg-white"> 
+          <div class="rounded-full absolute z-20 md:right-36 right-28 top-[-60px] w-28 overflow-hidden"><img src="https://buffer.com/static/testimonials/troy-petrunoff@mobile.jpg" alt="" srcset=""></div>
+ 
+            <p class="font-robo  mt-9 ">For a marketing team with a lot on our plates, Buffer is a crucial tool in our brand-building efforts.</p>
+            
+            <div class="w-full flex justify-center items-center ">
+            <div class="w-24   mt-12">
+              <svg width="100%" height="100%" viewBox="0 0 159.8 34.7" id="lensabl-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" space="preserve"><path d="M70 33.8c1.5.6 3.2.9 5.2.9 1.2 0 2.3-.1 3.5-.4 1.1-.3 2.1-.7 3-1.3.9-.6 1.6-1.3 2.1-2.2.5-.9.8-2 .8-3.4 0-1.2-.2-2.1-.6-2.9-.4-.8-.9-1.4-1.6-2-.7-.5-1.5-1-2.4-1.3-.9-.3-2-.6-3-.8-.8-.1-1.6-.3-2.3-.5-.8-.2-1.4-.5-2-.7-.6-.3-1.1-.6-1.4-1-.4-.4-.6-.9-.6-1.5s.2-1.2.5-1.7.7-.9 1.2-1.2c.5-.3 1-.5 1.6-.7.6-.1 1.2-.2 1.8-.2 1.3 0 2.4.3 3.3.9.5.3 1 .8 1.5 1.2.3.4.9.5 1.3.2l1.3-.8c.2-.1.4-.4.4-.7 0-.3 0-.5-.2-.7-.7-.9-1.6-1.6-2.6-2.1-1.4-.7-3-1-4.7-1-1.1 0-2.2.2-3.2.5s-2 .7-2.8 1.3c-.8.6-1.5 1.3-2 2.1s-.7 1.8-.7 2.9c0 1.2.2 2.2.7 2.9.4.7 1 1.4 1.8 1.8.7.5 1.6.9 2.6 1.2 1 .3 2.1.6 3.2.8.7.1 1.3.3 1.9.5.6.2 1.2.4 1.7.7.5.3.9.7 1.3 1.1.3.5.5 1.1.5 1.8s-.2 1.3-.5 1.9c-.6.6-1 1-1.6 1.3-.5.3-1.2.6-1.8.7-.7.1-1.3.2-2 .2-1.5 0-2.8-.3-3.8-.9-.7-.4-1.3-1-1.9-1.6-.2-.2-.4-.3-.7-.3-.2 0-.4.1-.6.2L67 30c-.2.2-.3.4-.4.7 0 .3.1.5.2.8 1 1 2.1 1.8 3.2 2.3zM34.3 15.1c-.1-.1-.1-.2-.1-.2 0-.1-.1-.2-.2-.2v-.2c-.4-.6-.7-1-1.1-1.4-1-1-2.2-1.9-3.5-2.4-1.4-.6-2.9-.8-4.5-.8-1.7 0-3.4.3-4.8.9-1.5.6-2.8 1.5-3.8 2.5-1.1 1.1-1.9 2.4-2.5 3.9-.6 1.5-.9 3.2-.9 5 0 1.7.3 3.3.8 4.9.6 1.5 1.3 2.8 2.4 3.9 1 1.1 2.3 2 3.7 2.6 1.5.7 3.2 1 5 1 2.2 0 4.2-.4 5.9-1.1 1.3-.6 2.6-1.5 3.7-2.7.2-.2.3-.5.3-.8 0-.3-.2-.5-.4-.7l-1-.8c-.4-.3-1-.2-1.3.1-.8.8-1.6 1.4-2.6 1.9-1.3.6-2.8 1-4.6 1-1.1 0-2.2-.2-3.2-.6-1-.4-1.8-1-2.5-1.8-.7-.7-1.3-1.6-1.7-2.6-.4-1-.7-2-.8-3.1v-.3h18.6c.3 0 .5-.1.7-.3.2-.2.3-.4.3-.7-.2-2.1-.5-4.7-1.9-7zm-4.7 5.4H16.4v-.4c.3-2.1 1.2-3.9 2.6-5.2 1.4-1.3 3.3-1.9 5.7-1.9 2.3 0 4.2.7 5.5 2 1.3 1.3 2 3 2.1 5.2v.3h-2.7zm116.5 3h.3c1-.1 1.8-.9 1.8-1.9 0-1.1-.9-1.9-1.9-1.9h-.4c-1.3-5.3-5.7-9.2-11.1-9.7-3.5-.3-7 .9-9.5 3.3l-.5.5V1c0-.5-.4-1-1-1h-1.5c-.5 0-1 .4-1 1v17.9l-.5-.2c-2-.9-4.4-.8-6.3.3l-.4.2-.1-.4c-1.5-5.3-6.4-9-12-9-5.8 0-10.8 3.9-12.1 9.5l-.1.3h-.6c-1.1 0-1.9.9-1.9 1.9s.9 1.9 1.9 1.9h.4v.3c.7 6.2 6.1 10.9 12.4 10.9 3.2 0 6.2-1.2 8.5-3.4l.5-.5v2.9c0 .5.4 1 1 1h1.5c.5 0 1-.4 1-1v-9c0-1.9 1.5-3.5 3.4-3.5 1.8 0 3 1.1 3.5 3v.2c1.1 5.9 6.2 10.1 12.2 10.1 6.3 0 11.6-4.7 12.4-11l.1.1zM103 31.2c-5.7.6-10.4-4.2-9.8-9.8.4-4.2 3.8-7.5 8-8 5.7-.6 10.4 4.2 9.8 9.8-.4 4.2-3.8 7.6-8 8zm31.6 0c-5.7.6-10.4-4.2-9.8-9.8.4-4.2 3.8-7.5 8-8 5.7-.6 10.4 4.2 9.8 9.8-.4 4.2-3.8 7.6-8 8zM2.3.1H1c-.5 0-1 .4-1 1v1.5c0 .5.4 1 1 1h1.3c.9 0 1.7.7 1.7 1.7v28.6c0 .5.4 1 1 1h1.4c.5 0 1-.4 1-1V5.1C7.3 2.3 5 .1 2.3.1zm156.6 31.3h-1.3c-.9 0-1.7-.7-1.7-1.7V1c0-.5-.4-1-1-1h-1.4c-.5 0-1 .4-1 1v28.7c0 2.8 2.3 5.1 5.1 5.1h1.3c.5 0 1-.4 1-1v-1.5c-.1-.5-.5-.9-1-.9z" fill="#B8B8B8"></path><path d="M96 23.7c-.2-.8-.2-1.7 0-2.7.5-2.3 2.4-4.2 4.7-4.7.9-.2 1.8-.2 2.7 0 .4.1.4.5.1.7-1.1.8-2.5 1.8-3.8 3.1-1.3 1.3-2.3 2.6-3 3.7-.1.4-.6.3-.7-.1zm43.8 0c.2-.8.2-1.7 0-2.7-.5-2.3-2.4-4.2-4.7-4.7-.9-.2-1.8-.2-2.7 0-.4.1-.4.5-.1.7 1.1.8 2.5 1.8 3.8 3.1 1.3 1.3 2.3 2.6 3 3.7.1.4.6.3.7-.1z" fill="#B8B8B8" opacity=".3"></path><path d="M52.6 10.7c-3.5 0-6.8 1.4-8.5 3.6v-3.4c0-.5-.4-1-1-1H42c-.5 0-1 .4-1 1v22.9c0 .5.4 1 1 1h1.5c.5 0 1-.4 1-1V23.4c0-1.4.2-2.7.5-3.9.3-1.2.8-2.2 1.4-3.1.6-.9 1.5-1.5 2.5-2s2.2-.7 3.5-.7c2 0 3.5.6 4.5 1.9.9 1.2 1.4 2.9 1.4 5v13.1c0 .5.4 1 1 1h1.5c.5 0 1-.4 1-1V20.3a16 16 0 0 0-.5-3.9c-.3-1.2-.9-2.2-1.6-3-.7-.8-1.7-1.5-2.8-1.9-1.4-.6-2.8-.8-4.3-.8z" fill="#B8B8B8"></path></svg>
+            </div>
+            </div>
+            <p class="font-robo font-bold mt-10">Troy Petrunoff, Marketing Manager</p>
+        </div>
+
+
+
+        
+        <div class="md:min-w-96 min-w-80 h-[350px] p-10 text-center rounded-lg drop-shadow-xl  bg-white"> 
+          <div class="rounded-full absolute z-20 md:right-36 right-28 top-[-60px] w-28 overflow-hidden"><img src="https://buffer.com/static/testimonials/rodrigo-hyago-happysocks@mobile.jpg" alt="" srcset=""></div>
+ 
+            <p class="font-robo  mt-9 ">Buffer makes it easy for us to monitor all of our engagement and strengthen the connection with our audience.</p>
+            
+
+            <div class="w-full flex justify-center items-center ">
+            <div class="w-24  mt-12">
+             <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" width="100%" height="100%" viewBox="0 0 88 37" xmlns="http://www.w3.org/2000/svg"><path d="M36.906 18.572a1.956 1.956 0 00-1.846-.211 3.327 3.327 0 00-1.529 1.635l.264-2.426a.226.226 0 000-.052.696.696 0 000-.158.261.261 0 00-.106-.211.417.417 0 00-.421 0c-.556.243-.94.767-1.002 1.371a75.927 75.927 0 00-.739 10.968c-.001 1.654.07 3.308.211 4.956.03.827.582 1.548 1.371 1.793.141.05.298.031.422-.052a.425.425 0 00.106-.37 86.091 86.091 0 01-.369-8.437l.21.159a2.274 2.274 0 002.11.211c1.16-.528 2.109-1.793 2.531-3.692.633-2.636.158-4.745-1.16-5.589zm-.316 4.746c-.264 1.582-.897 2.795-1.688 3.164a.84.84 0 01-.685.105c-.528-.158-.791-1.054-.686-2.214.158-2.268 1.055-3.902 1.951-4.588a.901.901 0 01.633-.211c.264.106.844 1.582.422 3.691zm20.143-3.164l-.686-.422c-3.533-2.214-7.962-5.062-8.067-8.753a7.066 7.066 0 012.003-4.904 6.592 6.592 0 014.641-2.056 4.64 4.64 0 013.48 1.371 5.96 5.96 0 011.687 4.324 7.38 7.38 0 01-1.318 3.954c-.211.264-.211.528-.105.528a.634.634 0 00.632.158c1.688-.211 3.059-2.531 3.059-5.168 0-3.058-1.951-6.644-7.224-6.644a9.233 9.233 0 00-6.539 2.637 8.068 8.068 0 00-2.426 5.695c0 4.745 4.43 7.54 8.015 9.808l1.582 1.054c2.795 1.846 4.061 3.164 3.164 5.01-.685 1.582-3.269 1.898-5.273 1.687s-4.588-.896-5.062-3.269c-.106-.528-.369-.528-.527-.528-.37 0-.528.528-.633 1.055a3.688 3.688 0 00.949 2.689c1.055 1.16 2.637 1.793 4.904 1.899 2.478.158 5.8-.528 7.066-3.059 1.055-1.898 1.371-4.218-3.269-7.171zM16.235 19.1a1.746 1.746 0 001.53-.844.472.472 0 00.105-.264.358.358 0 00-.053-.158.477.477 0 00-.422-.264 7.943 7.943 0 00-1.212-.105c-.052-5.335.195-10.67.738-15.978a.422.422 0 00-.106-.474.422.422 0 00-.421 0 2.057 2.057 0 00-1.213 1.74 102.873 102.873 0 00-1.055 14.659 56.634 56.634 0 00-7.962.369v-1.582a97.552 97.552 0 01.685-12.602.474.474 0 00-.211-.422.424.424 0 00-.422 0 2.059 2.059 0 00-1.265 1.476 81.708 81.708 0 00-1.002 13.447 13.44 13.44 0 00-1.846.422c-.896.263-1.371 1.16-1.582 1.951a.93.93 0 000 .211.477.477 0 00.159.369.58.58 0 00.58.052c.855-.323 1.737-.57 2.636-.738a58.062 58.062 0 00.369 7.013c.211 1.582 1.055 2.11 1.899 2.11a.579.579 0 00.474-.106.425.425 0 00.106-.316.937.937 0 000-.106 86.021 86.021 0 01-.633-9.017 67.627 67.627 0 017.91-.738 78.5 78.5 0 00.421 9.07c.211 1.582 1.055 2.109 1.741 2.215a.634.634 0 00.58-.106.42.42 0 00.105-.316.937.937 0 000-.106 89.162 89.162 0 01-.633-10.81zm68.815 4.007c-1.055-2.267-1.213-3.902-.528-4.482a.578.578 0 00.211-.369.471.471 0 00-.158-.369 1.212 1.212 0 00-.844-.422 1.058 1.058 0 00-.791.316c-.896.844-1.582 2.426-2.109 4.852h-.053a.368.368 0 00-.369.158 1.42 1.42 0 00-.316.949c.011.232.046.461.105.686l.158.527-.052.211c-.053.158-.106.263-.106.422-.259.537-.66.993-1.16 1.318a.84.84 0 01-.685.105c-.422-.158-1.055-1.054-1.213-2.531a4.697 4.697 0 002.426-3.216c.059-.26.095-.525.105-.791a3.483 3.483 0 00-.844-2.321 1.953 1.953 0 00-1.423-.738 1.901 1.901 0 00-1.371.633 6.195 6.195 0 00-1.213 2.057 85.12 85.12 0 01.791-10.125.37.37 0 00-.053-.369.369.369 0 00-.369-.105h-.053a1.74 1.74 0 00-1.002 1.371 62.214 62.214 0 00-.896 13.393 4.748 4.748 0 01-2.109 2.479 1.22 1.22 0 01-1.055 0c-.527-.317-.949-1.582-.897-3.164.106-2.109.897-3.85 1.424-4.219a.318.318 0 01.211-.105c.053 0 .053.053.106.105.263.422.369 1.582-.106 2.901a.316.316 0 00.053.263c.105.106.211.106.369.106.685-.053 1.371-.844 1.371-2.11a2.69 2.69 0 00-1.318-2.214 1.528 1.528 0 00-1.529-.053 2.957 2.957 0 00-1.161 1.055l-1.792 2.267a4.116 4.116 0 00-1.424-2.478 1.316 1.316 0 00-.844-.264.898.898 0 00-1.054-.211c-.95.527-1.899 2.32-2.11 4.113-.422 3.797 1.424 4.851 2.268 5.115a2.057 2.057 0 002.003-.316c.897-.686 1.424-2.11 1.424-3.902v-.844c.153-.221.294-.45.422-.686l-.105.739c-.37 3.849 1.423 4.904 2.531 5.273a2.9 2.9 0 002.32-.264c.451-.277.83-.656 1.107-1.107v.052c0 .832.532 1.576 1.319 1.846a.526.526 0 00.421-.105.422.422 0 00.106-.37c-.791-5.009 1.054-8.7 2.109-9.228a.318.318 0 01.422.053c.248.47.305 1.019.158 1.529a4.644 4.644 0 01-2.373 3.112.739.739 0 00-.369.738c.264 2.109 1.371 3.586 2.9 3.849.755.174 1.55 0 2.162-.474.357-.285.645-.645.844-1.055a3.064 3.064 0 001.846 1.424 2.376 2.376 0 002.109-.633c.949-.791.949-2.268.053-4.324zm-20.724-3.322c.317.053.686.791.844 1.951a1.899 1.899 0 01-.791-1.002 2.07 2.07 0 01-.106-.685.484.484 0 01.053-.264zm.949 3.48c0 1.741-.527 2.953-.949 3.322a.476.476 0 01-.422.159c-.211-.053-1.054-.897-1.054-2.742 0-.211 0-.422.052-.686a8.794 8.794 0 01.317-1.74 2.375 2.375 0 002.056 1.687zM84.1 26.587a.525.525 0 01-.474.106c-.633-.106-1.582-.791-2.215-2.109a.235.235 0 000-.053v-.053l.106-.316c.232-1.147.549-2.275.949-3.375a9.43 9.43 0 00.843 2.795l.106.211c.422 1.054 1.055 2.32.685 2.742zm-54.155-8.015a1.953 1.953 0 00-1.792-.211 3.329 3.329 0 00-1.53 1.635l.264-2.478a.597.597 0 000-.158.263.263 0 00-.105-.211.419.419 0 00-.422 0 1.688 1.688 0 00-1.002 1.371 58.695 58.695 0 00-.58 6.486c-.369 1.054-.844 1.476-1.055 1.476a.265.265 0 01-.105-.105c-.422-.739-.633-3.903.105-6.855a.422.422 0 00-.053-.37.368.368 0 00-.369-.105 1.319 1.319 0 00-.632.369 2.173 2.173 0 00-.739-.844 1.741 1.741 0 00-1.582-.105c-1.16.527-2.109 1.951-2.636 4.06-.844 3.164.211 4.746 1.476 5.273.55.265 1.191.265 1.74 0a2.687 2.687 0 001.108-1.529 2.27 2.27 0 001.371 1.424c.409.166.871.147 1.265-.053v1.846a57.759 57.759 0 00.211 5.009c.022.813.55 1.53 1.319 1.793.14.05.297.03.421-.053a.42.42 0 00.106-.369c-.211-2.215-.369-5.062-.369-8.437a2.266 2.266 0 002.32.369c1.16-.527 2.109-1.793 2.531-3.691.633-2.636.158-4.746-1.213-5.589zm-8.12 3.164c-.106 2.637-.949 4.43-1.582 5.01a.528.528 0 01-.369.158c-.369-.106-.897-.791-.897-2.109a8.73 8.73 0 01.159-1.424c.263-1.793 1.16-3.375 1.792-3.797.159-.105.211-.105.211-.105.317.105.633.843.528 2.109zm7.804 1.582c-.316 1.582-.896 2.795-1.687 3.164a.843.843 0 01-.633.105c-.527-.158-.791-1.054-.686-2.214.159-2.268 1.055-3.902 1.951-4.588a.901.901 0 01.633-.211c.264.106.844 1.582.528 3.691zm14.765-4.429a.423.423 0 00-.106-.317.475.475 0 00-.422-.052c-.527.105-.896.527-1.054 1.318a23.337 23.337 0 00-.369 2.847l-.106 1.055c-.263 2.795-.896 3.058-1.054 3.058-.159 0-.422-.263-.633-.738-.633-1.582-.369-5.378.053-7.382a.424.424 0 00-.053-.369.42.42 0 00-.422-.053c-.53.158-.922.612-1.002 1.16-.738 2.953-.738 6.75.317 8.226a1.53 1.53 0 002.162.369c.316-.226.585-.513.79-.843l.211 3.322c.071.597.106 1.125.106 1.582 0 1.265-.211 1.898-.633 2.214a.844.844 0 01-.791.053c-.791-.316-1.582-1.476-1.898-3.164-.053-.316-.264-.369-.369-.369a.423.423 0 00-.422.264 3.164 3.164 0 00-.106 2.109c.264 1.318 1.055 2.32 1.899 2.636a2.27 2.27 0 002.214-.474c.897-.686 1.951-2.109 1.582-4.851a54.846 54.846 0 010-11.443zm41.816-1.055c-.723 0-1.318-.595-1.318-1.318s.596-1.318 1.319-1.318c.703 0 1.289.562 1.317 1.265l.001.053c0 .723-.595 1.318-1.318 1.318h-.001zm0-2.426l-.053-.001c-.608 0-1.107.5-1.107 1.108 0 .607.499 1.107 1.107 1.107.607 0 1.107-.499 1.107-1.106l.002-.053a1.06 1.06 0 00-1.055-1.055zm.316 1.793l-.211-.527h-.264v.527h-.263v-1.476h.527a.476.476 0 01.475.422.424.424 0 01-.264.422l.264.527zm-.211-1.16h-.264v.422h.264c.158 0 .211-.053.211-.211a.212.212 0 00-.211-.211z" fill="#B8B8B8" fill-rule="nonzero"></path></svg>
+            </div>
+            </div>
+            <p class="font-robo font-bold mt-10">Rodrigo Hyago, Social Media Content Manager</p>
+        </div>
+
+
+        
+        <div class="md:min-w-96 min-w-80 h-[350px] p-12 text-center rounded-lg drop-shadow-xl  bg-white"> 
+          <div class="rounded-full absolute z-20 md:right-36 right-28 top-[-60px] w-28 overflow-hidden"><img src="https://buffer.com/static/testimonials/joe-mercy-for-animals@mobile.jpg" alt="" srcset=""></div>
+ 
+            <p class="font-robo  mt-9 ">Buffer saves us, literally, hours and in turn helps us spread our message even further.</p>
+            
+
+            <div class="w-full flex justify-center items-center ">
+            <div class="w-24   mt-12">
+             <svg width="100%" height="100%" viewBox="0 0 133 40" version="1.1" xmlns="http://www.w3.org/2000/svg" space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><g transform="translate(-5955 -5256)"><g id="Artboard1" transform="matrix(.375 0 0 .2545 1713.01 3918.19)"><path fill="none" d="M11313 5256.47h352v157.166h-352z"></path><clipPath id="_clip1"><path d="M11313 5256.47h352v157.166h-352z"></path></clipPath><g clip-path="url(#_clip1)"><path fill="none" d="M11306 5256h107v40.301h-107z" transform="matrix(3.28972 0 0 3.89979 -25880.6 -15240.8)"></path><path d="M3.846 19.82h6.966A11.29 11.29 0 015.099 10 11.29 11.29 0 0110.812.179H3.846C2.914 1.544.05 4.922.05 10c0 5.078 2.864 8.455 3.796 9.82M28.937.18h-6.965a11.291 11.291 0 015.712 9.821c0 4.208-2.3 7.878-5.712 9.821h6.965c.932-1.365 3.796-4.744 3.796-9.821 0-5.079-2.864-8.455-3.796-9.821" fill="#B8B8B8" fill-rule="nonzero" transform="matrix(2.99526 0 0 4.41332 11328.846 5289.176)"></path><path d="M9.518 10a6.875 6.875 0 1013.749-.001A6.875 6.875 0 009.518 10M93.322 7.838c-2.291 0-3.829-1.796-3.829-3.883 0-2.086 1.56-3.905 3.851-3.905s3.828 1.797 3.828 3.883c0 2.087-1.559 3.905-3.85 3.905m0-7.002c-1.721 0-2.946 1.376-2.946 3.097s1.247 3.119 2.968 3.119c1.721 0 2.946-1.376 2.946-3.097S95.043.836 93.322.836m-4.849.129h-4.56v2.688h4.076v.775h-4.076v3.281h-.85V.18h5.409l.001.785zM75.685 7.709h-.86V4.73L71.695.18h1.033l2.538 3.764L77.825.18h.99l-3.13 4.539v2.99zm-7.852.129c-2.173 0-3.775-1.71-3.775-3.883 0-2.152 1.592-3.905 3.808-3.905 1.365 0 2.182.484 2.936 1.194l-.581.625c-.634-.603-1.343-1.033-2.365-1.033-1.667 0-2.916 1.343-2.916 3.097 0 1.753 1.258 3.119 2.916 3.119 1.032 0 1.71-.398 2.43-1.086l.559.548c-.786.797-1.647 1.324-3.012 1.324m36.226-.129l-2.19-2.927H99.72v2.927h-.849V.18h3.239c1.656 0 2.721.892 2.721 2.248 0 1.258-.861 1.989-2.044 2.204l2.313 3.077h-1.041zm-2.02-6.744H99.72V4.02h2.313c1.129 0 1.937-.581 1.937-1.56 0-.936-.71-1.495-1.926-1.495M61.958 7.709l-2.184-2.927h-2.151v2.927h-.85V.18h3.238c1.656 0 2.721.892 2.721 2.248 0 1.258-.86 1.989-2.044 2.204l2.313 3.077h-1.043zM59.946.965h-2.323V4.02h2.313c1.129 0 1.936-.581 1.936-1.56 0-.936-.709-1.495-1.926-1.495M55.021.954h-4.593v2.57h3.842v.775h-3.842v2.635h4.647v.775h-5.497V.18h5.442l.001.774zM43.65 5.643h-.044l-2.742-4.022v6.088h-.83V.179h.861l2.744 4.109L46.382.179h.86v7.53h-.85V1.61L43.65 5.643zm43.781 10.002c1.687.368 2.466.984 2.466 2.153 0 1.308-1.082 2.152-2.586 2.152-1.199 0-2.183-.4-3.093-1.212l.531-.627c.79.714 1.546 1.071 2.595 1.071 1.017 0 1.687-.53 1.687-1.297 0-.714-.377-1.115-1.968-1.45-1.741-.378-2.542-.942-2.542-2.196 0-1.21 1.049-2.076 2.488-2.076 1.103 0 1.893.313 2.661.929l-.498.66c-.703-.573-1.406-.821-2.185-.821-.984 0-1.611.54-1.611 1.232 0 .725.389 1.125 2.055 1.482m-8.966-3.353h.85v6.744h3.723v.784h-4.573v-7.528zM64.29 17.756h-.043l-2.742-4.023v6.089h-.829v-7.53h.861L64.28 16.4l2.742-4.108h.861v7.53h-.849v-6.1l-2.744 4.034zm-6.839 2.065h.849v-7.529h-.849v7.529zm-3.205-7.529h.828v7.529h-.678l-4.861-6.175v6.172h-.828V12.29h.795l4.743 6.034.001-6.032zm22.733 7.529h-.914l-.859-1.938H71.11l-.87 1.937h-.87l3.406-7.529h.796l3.407 7.53zm-3.815-6.539l-1.721 3.838h3.431l-1.71-3.838zM47.22 19.82h-.914l-.859-1.937H41.35l-.87 1.937h-.869l3.406-7.529h.795l3.408 7.529zm-3.816-6.539l-1.72 3.838h3.431l-1.711-3.838z" fill="#B8B8B8" fill-rule="nonzero" transform="matrix(2.99526 0 0 4.41332 11328.846 5289.176)"></path></g></g></g></svg>
+            </div>
+            </div>
+            <p class="font-robo font-bold mt-10">Joe Loria, Content Manager</p>
+        </div>
+        </div>
+        </div>
+
+       
+
+        <div class="w-full md:flex md:justify-between  items-center justify-center  mt-12 px-10">
+
+          <div class=" text-center md:mb-0 mb-8">
+            <p class="font-pop text-4xl font-bold text-[#2c4bff]">10 years</p>
+            <p class="font-robo">in business</p>
+          </div>
+
+      <div class=" text-center md:mb-0 mb-8">
+        <p class="font-pop text-4xl font-bold text-[#2c4bff]">140,000</p>
+        <p class="font-robo">users</p>
+      </div>
+
+      <div class=" text-center md:mb-0 mb-8">
+        <p class="font-pop text-4xl font-bold text-[#2c4bff]">100k+</p>
+        <p class="font-robo">monthly blog readers</p>
+      </div>
+      <div class=" text-center ">
+        <p class="font-pop text-4xl font-bold text-[#2c4bff]">1.2m+</p>
+        <p class="font-robo">social followers</p>
+      </div>
+    </div>
+
+   
+
+    <div class="
+    justify-center flex flex-col  text-center md:text-left md:flex md:flex-row w-full gap-[2em] p-4 mt-3 md:mt-40 mb-14 md:mb-24">
+      <div class="min-w-[350px] md:max-w-[620px]   px-4 pt-16">
+     
+      <p class="font-pop text-res2 mt-8 font-bold  text-black">And we are here to help</p>
+      
+      <p class="font-robo mt-8">Our customer advocates are standing by 24/7 to support you via email and social media. We also have a comprehensive, regularly updated help center for those who prefer to find help themselves.</p>
+     
+      
+      <button class=" border border-[#2c4bff] mt-10 rounded-md text-[#2c4bff] font-robo text-lg font-normal py-3 px-6">Visit out help center</button>
+    
+      
+     
+      </div>
+      
+      
+      <div class="md:max-w-[652px]">
+      <div class="flex h-full justify-center items-center">
+        <img class="w-full " src="https://buffer.com/static/homepage/webp/team-map.webp" alt="" srcset="">
+      </div>
+      </div>
+      </div>
+    
+
+      <div class="w-full flex flex-col justify-center items-center mt-16">
+       <p class="font-robo font-bold text-lg">An official marketing partner of the industry leaders</p>
+       <div class="md:flex md:flex-row  md:justify-center md:items-center flex flex-col justify-center items-center ">
+       <img  class="w-24 m-5" src="https://buffer.com/static/ui/meta-business-partner@2x-2.png" alt="" srcset=""> 
+       
+       <img  class="w-36 m-5" src="https://buffer.com/static/ui/pinterest-marketing-partner@2x-2.png" alt="" srcset="">
+       <img  class="w-36 m-5" src="https://buffer.com/static/ui/linkedin-marketing-partner@2x-2.png" alt="" srcset="">
+
+      </div>
+      </div>
+
+      <div class="w-full h-96 relative overflow-hidden justify-center items-center flex mt-14  bg-[#2c4bff]">
+        <div class="w-[200px] left-0 overflow-hidden absolute h-96 lg:block  hidden">
+         <img class="w-10 absolute z-10 top-14 right-8 " src="https://buffer.com/static/background/triangle-green.svg" alt="" srcset="">
+         <img class="w-44 absolute z-10 top-32 left-[-50px]" src="https://buffer.com/static/background/planet@2x.png" alt="" srcset="">
+  <img class="w-16 absolute z-10 bottom-[-17px] right-12" src="https://buffer.com/static/background/circle-pink.svg" alt="" srcset="">
+</div>
+
+ <div class="lg:w-[880px]  h-96  text-center px-8">
+<p class="font-robo font-extrabold text-white mt-28 mb-2  text-res">140,000+ people like you use Buffer to build their brand on social media every month</p>
+<button class="w-52 h-16 rounded-md text-white  font-bold  hover:bg-[#da576a] focus:border border-white font-robo text-lg mt-12 bg-[#e97284]">Get started now</button>
+ </div>
+
+ <div class="w-[250px] overflow-hidden absolute right-0 h-96 lg:block  hidden">
+  <img class="w-10 absolute z-10 top-14 left-0 " src="https://buffer.com/static/background/circle-brush@2x.png" alt="" srcset="">
+  <img class="w-44 absolute z-10 top-32 right-[-50px]" src="https://buffer.com/static/background/lines-orange.svg" alt="" srcset="">
+<img class="w-6 absolute z-10 bottom-[90px] right-20" src="https://buffer.com/static/background/triangle-yellow.svg" alt="" srcset="">
+</div>
+      </div>
+
+
+<footer class="bg-white">
+  <div class="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-12 lg:px-16 lg:pt-24 lg:pb-7">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div >
+        <div class="flex justify-center  sm:justify-start sm:ml-0">
+          <div class="w-28">
+          <svg width="100%" height="100%" viewBox="0 0 102 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M52.1181 8.78609V8.9762H55.1079H56.2772H57.935V8.78609C57.935 3.43581 60.898 0.312554 67.1502 0.692776V5.49988C64.5134 5.30977 62.9912 6.15169 62.9912 8.78609V8.9762H67.1502V13.7833H62.9912V28.3404H57.935V13.7833H56.2772H55.1079H52.1181V28.3404H47.062V13.7833H44.2349V8.9762H47.062V8.78609C47.062 3.43581 50.025 0.312554 56.2772 0.692776V5.49988C53.6676 5.30977 52.1181 6.15169 52.1181 8.78609ZM19.362 8.81277C19.362 11.1484 18.3835 12.9681 16.7797 14.2445C18.9815 15.4938 20.395 17.6394 20.4493 20.4367C20.4493 25.0809 16.6437 28.2856 11.8866 28.2856H0.225098V1.18115H11.0168C15.6651 1.18115 19.362 4.27725 19.362 8.81277ZM13.9798 9.19299C13.9798 7.48199 12.7837 6.20553 11.044 6.20553H5.63453V12.1805H11.044C12.7293 12.1805 13.9798 10.904 13.9798 9.19299ZM5.63453 23.3156H11.8595C13.708 23.3156 15.0399 21.9576 15.0399 20.1108C15.0399 18.2912 13.708 16.9332 11.8595 16.9332H5.63453V23.3156ZM36.2156 19.4044V8.94824H41.2445V28.3124H36.1884V26.1397C35.0467 27.8779 33.008 28.8556 30.3712 28.8556C26.185 28.8556 22.9502 26.004 22.9502 20.8438V8.94824H28.0062V20.2191C28.0062 22.8535 29.6101 24.2115 31.8935 24.2115C34.3672 24.2115 36.2156 22.7721 36.2156 19.4044ZM73.3208 20.6813H88.1085C88.2172 20.0295 88.2988 19.3777 88.2988 18.6173C88.2988 12.9139 84.1669 8.37842 78.3769 8.37842C72.2063 8.37842 68.02 12.8325 68.02 18.6173C68.02 24.4021 72.1791 28.8561 78.7574 28.8561C82.5359 28.8561 85.4717 27.3352 87.293 24.7008L83.2155 22.3923C82.3728 23.5059 80.7961 24.3206 78.8118 24.3206C76.175 24.3206 74.0547 23.2343 73.3208 20.6813ZM73.2392 16.8248C73.8101 14.3533 75.6586 12.9139 78.3769 12.9139C80.4972 12.9139 82.6174 14.0274 83.2426 16.8248H73.2392ZM95.6113 8.94907V12.2896C96.6171 9.6552 99.0908 8.56885 101.564 8.56885V14.1364C98.9277 13.8105 95.6113 14.9783 95.6113 19.0521V28.3133H90.5552V8.94907H95.6113Z" fill="#231F20"></path></svg>
+        </div>
+        </div>
+
+        <!-- <p class="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa
+          cum itaque neque.
+        </p> -->
+ <div class=" lg:mt-[305px] ">
+        <ul class="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
+         
+          <li>
+            <a
+              href="#"
+              rel="noreferrer"
+              target="_blank"
+              class="text-black transition hover:text-black"
+            >
+              <span class="sr-only">Instagram</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill-rule="evenodd"
+                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              rel="noreferrer"
+              target="_blank"
+              class="text-black transition hover:text-black"
+            >
+              <span class="sr-only">Facebook</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill-rule="evenodd"
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+
+
+          <li>
+            <a
+              href="#"
+              rel="noreferrer"
+              target="_blank"
+              class="text-black transition hover:text-black"
+            >
+              <span class="sr-only">Twitter</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              rel="noreferrer"
+              target="_blank"
+              class="text-teal-700 transition hover:text-teal-700/75"
+            >
+              <span class="sr-only">tiktok</span>
+              <svg height="20px" width="20px" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path fill="current" stroke="current" d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" fill-rule="evenodd"></path></svg>
+            </a>
+          </li>
+
+          
+
+
+          <li>
+            <a
+              href="#"
+              rel="noreferrer"
+              target="_blank"
+              class="text-teal-700 transition hover:text-teal-700/75"
+            >
+              <span class="sr-only">linkdin</span>
+              <svg height="20px" width="20px" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path fill="current" stroke="current" d="M11.175.725H1.698a.81.81 0 0 0-.819.802v9.519c0 .442.369.802.819.802h9.477c.455 0 .823-.36.823-.802V1.527a.816.816 0 0 0-.823-.802zm-7 9.478h-1.65V4.897h1.65v5.306zm-.827-6.03a.96.96 0 0 1 0-1.917.96.96 0 0 1 0 1.916zm7.005 6.03h-1.65v-2.58c0-.614-.013-1.408-.856-1.408-.86 0-.99.671-.99 1.363v2.625H5.21V4.897h1.58v.724h.024c.221-.417.758-.855 1.56-.855 1.67 0 1.978 1.097 1.978 2.53v2.907z" fill-rule="nonzero"></path></svg>
+            </a>
+          </li>
+
+          
+          <li>
+            <a
+              href="#"
+              rel="noreferrer"
+              target="_blank"
+              class="text-teal-700 transition hover:text-teal-700/75"
+            >
+              <span class="sr-only">pintrest</span>
+              <svg height="20px" width="20px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill="current" stroke="current" d="M15.236,0.308c-8.015,0 -14.512,6.487 -14.512,14.488c0,6.141 3.822,11.388 9.221,13.498c-0.132,-1.144 -0.239,-2.909 0.047,-4.161c0.263,-1.133 1.697,-7.202 1.697,-7.202c0,0 -0.43,-0.871 -0.43,-2.147c0,-2.015 1.17,-3.517 2.627,-3.517c1.242,0 1.84,0.93 1.84,2.039c0,1.24 -0.789,3.1 -1.207,4.829c-0.346,1.443 0.729,2.623 2.15,2.623c2.58,0 4.563,-2.718 4.563,-6.63c0,-3.47 -2.497,-5.89 -6.068,-5.89c-4.132,0 -6.557,3.088 -6.557,6.284c0,1.24 0.478,2.576 1.075,3.303c0.119,0.143 0.131,0.274 0.095,0.417c-0.107,0.453 -0.358,1.443 -0.406,1.646c-0.059,0.262 -0.215,0.322 -0.489,0.191c-1.816,-0.847 -2.95,-3.482 -2.95,-5.617c0,-4.567 3.32,-8.764 9.591,-8.764c5.028,0 8.946,3.577 8.946,8.371c0,4.996 -3.154,9.015 -7.525,9.015c-1.469,0 -2.855,-0.764 -3.321,-1.67c0,0 -0.728,2.767 -0.907,3.446c-0.323,1.264 -1.207,2.838 -1.804,3.804c1.362,0.418 2.795,0.644 4.3,0.644c8.014,0 14.512,-6.487 14.512,-14.488c0.024,-8.025 -6.474,-14.512 -14.488,-14.512Z"></path></svg>
+            </a>
+          </li>
+        </ul>
+
+        <div class="flex justify-center sm:justify-start">
+        <p class="font-robo font-semibold text-sm mt-5 ">Download</p>
+      </div>
+        <div class="flex justify-center sm:justify-start">
+        <button class="w-32 h-8 flex mr-3 items-center justify-center rounded-2xl text-[0.7rem] mt-2 text-[#2c4bff] font-bold font-robo border border-[#2c4bff]"><svg height="20" width="20" viewBox="0 0 60 60" class="fill-[#2c4bff] mr-1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M41.777 30.517c-.062-6.232 5.082-9.221 5.312-9.372-2.891-4.227-7.395-4.807-8.998-4.873-3.83-.389-7.477 2.256-9.42 2.256-1.939 0-4.941-2.199-8.117-2.143-4.178.062-8.029 2.43-10.179 6.17-4.339 7.527-1.11 18.682 3.118 24.791 2.067 2.986 4.532 6.346 7.766 6.223 3.117-.123 4.293-2.016 8.061-2.016s4.826 2.016 8.123 1.953c3.352-.061 5.477-3.043 7.527-6.041 2.373-3.469 3.35-6.828 3.408-6.998-.073-.034-6.534-2.509-6.601-9.95zM35.582 12.229c1.715-2.082 2.877-4.975 2.561-7.855-2.475.1-5.471 1.645-7.248 3.725-1.592 1.846-2.984 4.785-2.611 7.613 2.761.214 5.577-1.405 7.298-3.483z"></path></svg> App Store</button>
+
+        <button class="w-32 h-8 flex items-center justify-center rounded-2xl text-[0.7rem] mt-2  text-[#2c4bff] font-bold font-robo border border-[#2c4bff]"><svg height="18" style="enable-background:new 0 0 56.6934 56.6934" width="18" viewBox="0 0 60 60" xml:space="preserve" class="fill-[#2c4bff] mr-1" xmlns="http://www.w3.org/2000/svg"><path d="M39.332 18.062 12.674 3.79a5.094 5.094 0 0 0-4.187-.305l22.711 22.711 8.134-8.134zM49.273 23.384l-7.679-4.11-8.66 8.659 8.66 8.66 7.679-4.112c3.632-1.944 3.632-7.152 0-9.097zM6.408 4.88A5.09 5.09 0 0 0 5.08 8.338v39.188c0 1.37.513 2.564 1.328 3.46L29.46 27.933 6.408 4.879zM8.487 52.38c1.3.475 2.802.437 4.187-.305l26.658-14.271-8.134-8.134L8.487 52.38z"></path></svg> Google Play</button>
+      </div>
+      <div class="flex justify-center sm:justify-start">
+      <p class="font-robo text-xs font-normal mt-4" >Copyright ©2024 Buffer| Privacy | Terms | Security</p>
+        </div>
+      </div>
+      </div>
+
+     
+
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
+        <div class="text-center sm:text-left">
+          <p class="text-xl font-bold font-robo text-gray-900">Tools</p>
+
+          <ul class="mt-4 space-y-4 text-sm">
+            <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Create
+              </a>
+            </li>
+
+            <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Publish
+              </a>
+            </li>
+
+            <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Analyze
+              </a>
+            </li>
+
+            <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Engage
+              </a>
+            </li>
+            
+            <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Start Page
+              </a>
+            </li>
+            <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Extras
+              </a>
+            </li>
+            <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                AI Assistant
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-center sm:text-left">
+          <p class="text-xl font-bold font-robo text-gray-900">Resources</p>
+
+          <ul class="mt-4 space-y-4 text-sm">
+            <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Blog
+              </a>
+            </li>
+            <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Content Library
+              </a>
+            </li> <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Browser Extension
+              </a>
+            </li> <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Free Social Media Post Creator
+              </a>
+            </li> <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Free Image Editor
+              </a>
+            </li> <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Free UTM Builder
+              </a>
+            </li> <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Free Marketing Tools
+              </a>
+            </li> <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Social Media Terms Glossary
+              </a>
+            </li>
+
+            <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Compare Buffer
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <div class="text-center sm:text-left">
+          <p class="text-xl font-bold font-robo text-gray-900">Support</p>
+
+          <ul class="mt-4 space-y-4 text-sm">
+            <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Help Center
+              </a>
+            </li>
+            <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Status
+              </a>
+            </li>
+            <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                What's New
+              </a>
+            </li>
+            <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Product Roadmap
+              </a>
+            </li>
+
+            <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Request a Feature
+              </a>
+            </li>
+          
+          </ul>
+        </div>
+
+        <div class="text-center sm:text-left">
+          <p class="text-xl font-bold font-robo text-gray-900">Company</p>
+
+          <ul class="mt-4 space-y-4 text-sm">
+            <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                About
+              </a>
+            </li>
+            <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Transparency
+              </a>
+            </li>
+            <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Careers
+              </a>
+            </li>
+            <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Accessibility
+              </a>
+            </li>
+            <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Press
+              </a>
+            </li>
+            <li>
+              <a class="text-black transition hover:text-[#2c4bff] font-robo text-lg" href="#">
+                Sitemap
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+   
+  </div>
+</footer>
+</main>
+</body>
+<script src="./scroll.js"></script>
+</html>
